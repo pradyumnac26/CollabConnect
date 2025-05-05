@@ -1,0 +1,11 @@
+- First we do npm init, and then package.json which is the configuration comes up.
+- And then we do npm i express -> when we do this, node_modules and package-lock.json comes up, inside node_modules we have tons of modules, also includes express folder, so when we do npm i express -> it installs express dependecy and , all dependcies on which this express is dependent. , and adds express as a dependency in package.json. 
+- what is bin folder in node_modules ? 
+- what is package-lock.json ? this tells us the exact version that we are running on. 
+- version naming convention  - 4.19.2 meaning , major release is 4, minor release is 19 and patch is 2.
+- express": "^5.1.0 , meaning ? we can also write it as ~5..1.0., tilda or carrot helps us auto update if that dependency version was updated.
+- if we dont put that carrot and all then it wont auto-update.
+- installing npm i -g nodemon, installs nodemon which doesnt require us to run the server again and again after the changes are done. 
+- we can add these as a script in package.json.
+- 
+
