@@ -7,5 +7,13 @@
 - if we dont put that carrot and all then it wont auto-update.
 - installing npm i -g nodemon, installs nodemon which doesnt require us to run the server again and again after the changes are done. 
 - we can add these as a script in package.json.
+- in routing, if i do app.get("/ab?c") -> this means b is optional, so if i do /abc on browser it works and /ac also works. 
+- order of routes matter, and app.use() output would be outputted for both get and post if same routes are usedin both. 
+- /ab+c -> then abbbbbbbc, any number of b u can use. 
+- /ab*cd means -> /abfheifewufhewfbcd , anyt characters between ab and cd. 
+- /a(bc)?d -> /ad also should work as it means, bc is optional. 
+- we can put regex inside these routes as well. 
+- to read the query parameters - /user?userId=101&.., u do req.query 
+- user/777 or user/107,dynamic query parameters , we do app.get("/user/:userId), we use -> req.params. 
 - 
 
